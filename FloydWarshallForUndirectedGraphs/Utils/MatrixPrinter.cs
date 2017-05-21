@@ -12,9 +12,9 @@ namespace MultidimensionalArrayUndirectedGraphFloydWarshall.Utils
         {
             Console.WriteLine("Shortest distances between every pair of vertices:");
 
-            for (int i = 0; i < distance.Length; ++i)
+            for (int i = 0; i < distance.GetLength(0); ++i)
             {
-                for (int j = 0; j < distance.Length; ++j)
+                for (int j = 0; j < distance.GetLength(1); ++j)
                 {
                     if (distance[i, j] == 2000000)
                         Console.Write("INF".PadLeft(7));
